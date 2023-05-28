@@ -1,0 +1,10 @@
+<div *ngIf="products && products.length > 0">
+  <div *ngFor="let product of products">
+    <a [routerLink]="['/product/', product.id]">
+      <div class="">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.price }}</p>
+      </div>
+    </a>
+  </div>
+</div>

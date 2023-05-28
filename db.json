@@ -1,0 +1,35 @@
+{
+  "products": [
+    {
+      "id": "31",
+      "name": "Product A",
+      "price": 500,
+      "img": "https://picsum.photos/200/200",
+      "categoryId": 1
+    },
+    {
+      "id": "3",
+      "name": "Product B",
+      "price": 100,
+      "img": "https://picsum.photos/200/200",
+      "categoryId": 1
+    },
+    {
+      "id": "4",
+      "name": "Product C update lần 2",
+      "img": "https://picsum.photos/200/200",
+      "price": 200,
+      "categoryId": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Danh A"
+    },
+    {
+      "id": 2,
+      "name": "Danh B"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<li><a [routerLink]="['/admin/product/add']">Add Product</a></li>
+
+<div class="product">
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th colspan="2">Action</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="products && products.length > 0">
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>
+          <button><a routerLink="{{ product.id }}/edit">Update</a></button>
+        </td>
+        <td><button (click)="removeItem(product.id)">Remove</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
